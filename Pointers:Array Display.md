@@ -28,9 +28,30 @@ To write a C program to read and display an array of 6 integer elements using po
 6. **End** the program.
 
 ## Program
-Add code here
+```
+#include <stdio.h>
 
+int main() {
+    int i, n;
+    int arr[10];
+    int *parr = arr; 
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+    printf("Enter %d elements:\n", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", parr + i);
+    }
+    printf("Array elements are:\n");
+    for(i = 0; i < n; i++) {
+        printf("%d ", *(parr + i));
+    }
+
+    return 0;
+}
+```
 ## Output
+<img width="448" height="339" alt="image" src="https://github.com/user-attachments/assets/1be62635-a813-457b-8ba7-800fde736993" />
 
 ## Result
+ a C program to read and display an array of 6 integer elements using pointers is written.
 
